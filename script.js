@@ -244,7 +244,7 @@
     
     if (type.length) {
       var sql =
-        "SELECT * FROM hcz_finaldatacWHERE type IN (" +
+        "SELECT * FROM hcz_finaldata WHERE type IN (" +
         type.join(",") +
         ")";
       console.log("Program: " + sql);
@@ -255,7 +255,7 @@
         ")";
      
     } else {
-      var sql_3 = "SELECT * FROM hcz_finaldata;"
+      var sql_3 = "SELECT * FROM hcz_finaldata"
       pointSource.setQuery(sql_3);
       var inputSQL_3 = "";
     }
